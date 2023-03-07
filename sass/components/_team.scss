@@ -1,0 +1,129 @@
+.team{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width:$tablet){
+        background-color: #F5F4FA;
+    }
+}
+
+.team-list {
+    @extend %list;
+
+    @media screen and (min-width:$tablet){
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: -15px;
+    }
+
+}
+
+.team-item {
+    max-width: 450px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $primery-white-color;
+
+    @media screen and (max-width: 479px){
+            margin-right: auto;
+                margin-left: auto;
+    }
+
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+
+     @media screen and (min-width:$tablet) {
+              flex-basis: calc((100% - 4 * 15px) /2);
+                 margin: 15px;
+        }
+
+       @media screen and (min-width:$desktop){
+              flex-basis: calc((100% - 8 * 15px) /4);
+       } 
+        
+}
+
+.team-thumb{
+    height: 460px;
+    overflow: hidden;
+
+    @media screen and (min-width:$tablet){
+        height: 374px;
+    }
+
+    @media screen and (min-width:$desktop){
+        height: 260px;
+    }
+}
+
+.team-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+.team-text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    @extend %list;
+}
+
+.list-social {
+    margin-bottom: 24px; ;
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+
+    transition: background-color $transition-time;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+
+
+    }
+}
+
+.icon-social {
+    margin-top: 12px;
+    fill: $svg-icon;
+
+    .social-link:hover & {
+        fill: $primery-white-color;
+    }
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: $primery-white-color;
+    color: $primary-text-color;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+
+    @media screen and (max-width: 767px){
+        background-color: #E5E5E5;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

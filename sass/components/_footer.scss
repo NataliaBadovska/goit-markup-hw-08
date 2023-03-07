@@ -1,0 +1,181 @@
+.footer-group{
+
+    @media screen and (max-width:1199px){
+        text-align: center;
+    }
+    
+
+    @media screen and (min-width:$desktop){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer-box{
+    @media screen and (min-width: $tablet){
+        display: flex;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width:1199px){
+        justify-content: space-around;
+    }
+}
+
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $secondary-bgc;
+
+    & .logo {
+            display: inline-block;
+            size: 24px;
+            margin-bottom: 20px;
+            color: $primery-white-color;
+        }
+}
+
+.footer-contact {
+
+    @media screen and (max-width:1199px) {
+            margin-bottom: 60px;
+        }
+   
+
+    & .contacts {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+    
+        & .adds {
+            color: $primery-white-color;
+        }
+
+        @media screen and (min-width:$desktop){
+            margin-right: 70px;
+        }
+}
+
+.contact-details {
+    @extend %list;
+}
+
+/*Footer-messenger*/
+
+.footer-messenger{
+    @media screen and (max-width:1199px) {
+            margin-bottom: 60px;
+        }
+}
+
+.messenger {
+    display: flex;
+    @extend %list;
+    justify-content: center;
+    
+}
+
+.messenger-title,
+.sending-title{
+    margin-bottom: 20px;
+
+    color: $primery-white-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.messenger-item {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+
+    transition: background-color $transition-time;
+
+    &:focus,
+    &:hover {
+        background-color: $accent-color;
+    }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+}
+
+.messenger-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+}
+
+.messenger-icon {
+    margin: 12px;
+    width: 20px;
+    height: 20px;
+    fill: $primery-white-color;
+}
+
+/*Sending*/
+
+.sending {
+    @media screen and (min-width:$desktop) {
+    margin-left: auto;
+    }
+}
+
+.sending-form {
+
+    @media screen and (max-width:1199px){
+        max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    
+
+    @media screen and (min-width:$desktop) {
+            display: flex;
+            width: 570px;
+            
+        }
+}
+
+.sending-field {
+    @media screen and (max-width:1199px){
+        margin-bottom: 20px;
+    }
+    
+    width: 100%;
+}
+
+.sending-mail {
+    width: 100%;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $secondary-bgc;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    letter-spacing: 0.03em;
+ }
+
+ .sending-icon {
+     margin-left: 10px;
+     width: 24px;
+     height: 24px;
+ }
+
+ .sending-button {
+     display: flex;
+     align-items: center;
+     margin-left: 12px;
+
+     @media screen and (max-width:1199px){
+        margin-right: auto;
+        margin-left: auto;
+     }
+    
+ }
+

@@ -1,0 +1,43 @@
+.about-section{
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    @extend %list;
+}
+
+.about-item {
+    position: relative;
+    height: 294px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+.about-title {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

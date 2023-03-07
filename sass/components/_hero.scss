@@ -1,0 +1,120 @@
+.hero {
+    text-align: center;
+   
+}
+
+.hero-title {
+    padding: 0px;
+    padding-top: 118px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: $primery-white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width:980px){
+        font-size: 44px;
+        padding-top: 200px;
+    }
+    
+}
+
+.overlay {
+    height: 400px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        linear-gradient(to top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images1/header-480.jpg");
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-radio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &{
+                background-image: 
+                linear-gradient(to top,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                url("../images1/header-960.jpg");
+            }
+        }
+
+        @media screen and (min-width: 560px){
+            background-image:
+            linear-gradient(to top,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+            url("../images1/header-768.jpg");
+
+                @media (min-device-pixel-radio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        & {
+                            background-image:
+                                linear-gradient(to top,
+                                    rgba(47, 48, 58, 0.4),
+                                    rgba(47, 48, 58, 0.4)),
+                                url("../images1/header-1536.jpg");
+                        }
+                    }
+        }
+
+        @media screen and (min-width:980px){
+            &{ 
+                height: 600px;
+                background-image:
+                    linear-gradient(to top,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url("../images1/header-1600.jpg");
+            
+                @media (min-device-pixel-radio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    & {
+                        background-image:
+                            linear-gradient(to top,
+                                rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url("../images1/header-3200.jpg");
+                    }
+                }
+            }
+
+            
+        }
+}
+
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    opacity: 1;
+    transition: opacity $transition-time;
+    overflow-y: scroll;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

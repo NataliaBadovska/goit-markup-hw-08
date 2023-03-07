@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="page-header line">
+        <!--Навигация-->
+        <div class="container ">
+    <nav class="main-nav">
+        <a href="./index.html" class="logo"><span class="accent">Web</span>Studio </a>
+        
+        <button 
+        type="button" 
+        class="menu-button is-open"
+        aria-expanded="false"
+        aria-controls="navigation"
+        data-menu-button>
+
+            <svg class="button-svg"
+                 width="24px"
+                 height="16px" 
+                 aria-label="Переключатель мобильного меню ">
+                <use class="icon-menu" href="./images1/icon.svg#nav-menu"></use>
+                <use class="icon-cross" href="./images1/icon.svg#cross"></use>
+            </svg>
+            
+        </button>
+        
+        <div class="navigation " id="navigation" data-menu>
+           
+            <ul class="site-list ">
+                <li class="site-item"><a href="./index.html" class="link-nav ">Студия</a></li>
+                <li class="site-item"><a href="./portfolio.html" class="link-nav current">Портфолио</a></li>
+                <li class="site-item"><a href="" class="link-nav">Контакты</a></li>
+            </ul>
+            
+            <ul class="auth-nav ">
+                
+                <li class="auth-item">
+                    <a href="tel:+380961111111" class="contacts-nav " aria-label="smartphone">
+                        <svg class="auth-nav-icon" width="10px" height="16px">
+                            <use href="./images1/icon.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="auth-item">
+                    <a href="mailto:info@devstudio.com" class="contacts-nav mail" aria-label="envelope">
+                        <svg class="auth-nav-icon" width="16px" height="12px">
+                            <use href="./images1/icon.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="social-media">
+                <li class="media-item"><a href="#" class="media-link">Instagram</a></li>
+                <li class="media-item"><a href="#" class="media-link">Twitter</a></li>
+                <li class="media-item"><a href="#" class="media-link">Facebook</a></li>
+                <li class="media-item"><a href="#" class="media-link">LinkedIn</a></li>
+            </ul>
+        </div>
+     
+    </nav>
+    </div>
+   
+    </header>
+
+    <!--Main-->
+    <main>
+        
+        <section class="section">
+        <div class="container works">
+            
+            <h1 class="works-title visually-hidden">Наши работы</h1>
+
+            <!-- Фильтр страницы -->
+            <ul class="filter ">
+                <li class="filter-item"><button type="button" class="filter-btn ">Все</button></li>
+                <li class="filter-item"><button type="button" class="filter-btn" >Веб-сайты</button></li>
+                <li class="filter-item"><button type="button" class="filter-btn">Приложения</button></li>
+                <li class="filter-item"><button type="button" class="filter-btn">Дизайн</button></li>
+                <li class="filter-item"><button type="button" class="filter-btn">Маркетинг</button></li>
+            </ul>
+            <!-- Наши работы -->
+
+            <ul class="developed ">
+                <li class="developed-item">
+                    <a href="" class="developed-link">
+                    <div class="scena-developed">
+                            <img srcset="
+                            ./images1/img1-450.jpg 1x,
+                            ./images1/img1-900.jpg 2x"
+                            src="./images1/img1-450.jpg "
+                            alt="Фотографии троих людей. Блондинка, брюнетка и мужчина"
+                            loading="lazy"
+                            class="developed-img">
+
+                            <div class="developed-overlay">
+                                <p class="desc">
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    получить
+                                    исчерпывающие сведения о компании или частном лице.
+                                </p>
+                            </div>
+                    </div>
+                        
+                    
+                    <div class="developed-text">
+                        <h2 class="developed-title">Технокряк</h2>
+                        <p class="developed-subtitle">Веб-сайт</p>
+                    </div>
+                    </a>
+                </li> 
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                            <img srcset="
+                                ./images1/img2-450.jpg 1x,
+                                ./images1/img2-900.jpg 2x"
+                             src="./images1/img2-450.jpg " 
+                             alt="Два баскетболиста "
+                             loading="lazy"
+                             class="developed-img">
+
+                        <div class="developed-overlay">
+                            <p class="desc">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                    </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Постер New Orlean vs Golden Star</h2>
+                    <p class="developed-subtitle">Дизайн</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                            
+                            <img srcset="
+                            ./images1/img3-450.jpg 1x,
+                            ./images1/img3-900.jpg 2x"
+                             src="./images1/img3-450.jpg " 
+                             alt="Логотип ресторана Seafood "
+                             loading="lazy"
+                             class="developed-img">
+                        
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Ресторан Seafood</h2>
+                    <p class="developed-subtitle">Приложение</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                        
+                            <img srcset="
+                                ./images1/img4-450.jpg 1x,
+                                ./images1/img4-900.jpg 2x"
+                                 src="./images1/img4-450.jpg "
+                                alt="Черные наушники"
+                                loading="lazy" 
+                                class="developed-img">
+                    
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Проект Prime</h2>
+                    <p class="developed-subtitle">Маркетинг</p>
+                 </div>
+                </a>
+                </li>
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                        
+                                <img srcset="
+                                    ./images1/img5-450.jpg 1x,
+                                     ./images1/img5-900.jpg 2x" 
+                                     src="./images1/img5-450.jpg "
+                                     alt="Две коробки. Белая и розовая"
+                                    loading="lazy"
+                                     class="developed-img">
+
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Проект Boxes</h2>
+                    <p class="developed-subtitle">Приложение</p>
+                  </div>
+                </a>
+                </li> 
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                            
+                        <img srcset="
+                            ./images1/img6-450.jpg 1x,
+                            ./images1/img6-900.jpg 2x"
+                            src="./images1/img6-450.jpg "
+                            alt="Две коробки. Белая и розовая"
+                             loading="lazy" 
+                            class="developed-img">
+                    
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Inspiration has no Borders</h2>
+                    <p class="developed-subtitle">Веб-сайт</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                        
+                            <img srcset="
+                                 ./images1/img7-450.jpg 1x,
+                                ./images1/img7-900.jpg 2x" 
+                                src="./images1/img7-450.jpg " 
+                                alt="Раскрытый журнал моды"
+                                loading="lazy"
+                                 class="developed-img">
+                    
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Издание Limited Edition</h2>
+                    <p class="developed-subtitle">Дизайн</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+                            
+                        <img srcset="
+                            ./images1/img8-450.jpg 1x,
+                            ./images1/img8-900.jpg 2x"
+                             src="./images1/img8-450.jpg " 
+                             alt="Бирка с английскими буквами"
+                            loading="lazy" 
+                            class="developed-img">
+                    
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Проект LAB</h2>
+                    <p class="developed-subtitle">Маркетинг</p>
+                  </div>
+                </a>
+                </li>
+                
+                <li class="developed-item">
+                <a href="" class="developed-link">
+                    <div class="scena-developed">
+
+                        <img srcset="
+                            ./images1/img9-450.jpg 1x,
+                            ./images1/img9-900.jpg 2x"
+                             src="./images1/img9-450.jpg " 
+                             alt="Руки печатающии на ноутбуке"
+                            loading="lazy" 
+                            class="developed-img">
+
+                    <div class="developed-overlay">
+                        <p class="desc">
+                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.
+                        </p>
+                    </div>
+                       
+                </div>
+                    
+                  <div class="developed-text">
+                    <h2 class="developed-title">Growing Business</h2>
+                    <p class="developed-subtitle">Приложение</p>
+                  </div>
+                </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        </section>
+
+    </main>
+
+    <footer class="page-footer ">
+    
+        <div class="container footer-group">
+    
+            <div class="footer-box">
+    
+                <div class="footer-contact">
+                    <a href="./index.html" class="logo"><span class="accent">Web</span>Studio </a>
+                    <address>
+                        <ul class="contact-details ">
+                            <li class=" adds">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li><a href="mailto:info@devstudio.com" class="contacts">info@example.com</a></li>
+                            <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
+                        </ul>
+    
+                    </address>
+                </div>
+    
+                <div class="footer-messenger">
+                    <h3 class="messenger-title">присоединяйтесь</h3>
+    
+                    <ul class="messenger">
+                        <li class="messenger-item">
+                            <a href="" class="messenger-link" aria-label="instagram">
+                                <svg class="messenger-icon">
+                                    <use href="./images1/icon.svg#instagram"></use>
+    
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="messenger-item">
+                            <a href="" class="messenger-link" aria-label="twitter">
+                                <svg class="messenger-icon">
+                                    <use href="./images1/icon.svg#twitter"></use>
+    
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="messenger-item">
+                            <a href="" class="messenger-link" aria-label="facebook">
+                                <svg class="messenger-icon">
+                                    <use href="./images1/icon.svg#facebook"></use>
+    
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="messenger-item">
+                            <a href="" class="messenger-link" aria-label="linkedin">
+                                <svg class="messenger-icon">
+                                    <use href="./images1/icon.svg#linkedin"></use>
+    
+                                </svg>
+                            </a>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+            </div>
+    
+            <div class="sending">
+    
+                <h3 class="sending-title">Подпишитесь на рассылку</h3>
+    
+                <form class="sending-form">
+    
+                    <div class="sending-field">
+    
+                        <label for="mail"></label>
+                        <input type="email" name="mail" id="mail" placeholder="E-mail" class="sending-mail">
+    
+                    </div>
+    
+                    <button type="submit" class="btn sending-button">Подписаться
+                        <svg class="sending-icon">
+                            <use href="./images1/icon.svg#send"></use>
+                        </svg>
+                    </button>
+    
+                </form>
+            </div>
+    
+    
+        </div>
+    
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    
+</body>
+</html>
